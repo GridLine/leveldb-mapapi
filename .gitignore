@@ -1,1 +1,15 @@
 target/
+.idea
+.*.swp
+.*.swo
+*~
+*.swp
+.idea
+.idea/*
+*.iml
+*.ipr
+*.iws
+.DS_Store
+.project
+.classpath
+.settings

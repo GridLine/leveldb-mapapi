@@ -1,0 +1,81 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>nl.gridline</groupId>
+	<artifactId>leveldb-mapapi</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>leveldb-mapapi</name>
+	<description>An implementation of java.util.Map and java.util.SortedMap on top of LevelDB.</description>
+
+	<organization>
+		<name>GridLine</name>
+		<url>http://www.gridline.nl/</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<id>job</id>
+			<name>Job Tiel Groenestege</name>
+			<email>job@gridline.nl</email>
+			<url>http://www.gridline.nl</url>
+			<organization>GridLine</organization>
+			<organizationUrl>http://www.gridline.nl</organizationUrl>
+		</developer>
+		<developer>
+			<id>daniel</id>
+			<name>Daniël de Kok</name>
+			<email>daniel@gridline.nl</email>
+			<url>http://www.gridline.nl</url>
+			<organization>GridLine</organization>
+			<organizationUrl>http://www.gridline.nl</organizationUrl>
+		</developer>
+		<developer>
+			<id>nielsslot</id>
+			<name>Niels Slot</name>
+			<email>niels@gridline.nl</email>
+			<url>http://www.gridline.nl</url>
+			<organization>GridLine</organization>
+			<organizationUrl>http://www.gridline.nl</organizationUrl>
+		</developer>
+	</developers>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.iq80.leveldb</groupId>
+			<artifactId>leveldb</artifactId>
+			<version>0.6</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.carrotsearch</groupId>
+			<artifactId>junit-benchmarks</artifactId>
+			<version>0.7.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava-testlib</artifactId>
+			<version>12.0</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+</project>
