@@ -30,6 +30,18 @@ import org.iq80.leveldb.WriteBatch;
 
 /**
  * A SortedMap implementation on top of LevelDB.
+ *
+ * Note that the following methods (besides the usual suspects) are O(n):
+ *
+ * <ul>
+ *     <li>{@link #clear()}</li>
+ *     <li>{@link #lastKey()}</li>
+ *     <li>{@link #size()} (use {@link #isEmpty()} rather than <i>size() == 0)</i></li>
+ *     <li>All methods of the object returned by {@link #entrySet()} (except obtaining an iterator).</li>
+ *     <li>All methods of the object returned by {@link #keySet()} (except obtaining an iterator).</li>
+ *     <li>All methods of the object returned by {@link #values()} (except obtaining an iterator).</li>
+ * </ul>
+ *
  * @author <a href="mailto:niels@gridline.nl">Niels Slot</a>
  */
 public class LevelDBStoredSortedMap<K, V> extends LevelDBStoredMap<K, V> implements StoredSortedMap<K, V>
